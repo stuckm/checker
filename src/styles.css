@@ -131,6 +131,9 @@ a:hover {
 .mob-table-items-titles-child p {
   color: lightGrey;
 }
+.mob-table {
+  display: none;
+}
 
 @media only screen and (max-width: 800px) {
   .table-name-cell {
@@ -141,6 +144,9 @@ a:hover {
     display: none;
   }
   .stats-mob {
+    display: block;
+  }
+  .mob-table {
     display: block;
   }
   .stats-desk {
