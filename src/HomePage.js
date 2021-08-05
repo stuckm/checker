@@ -41,6 +41,7 @@ function HomePage({ history }) {
   useEffect(() => {
     let dataClone = data.slice();
     let zz = data.slice();
+    let pp = data.slice();
 
     const percentData = zz.sort((a, b) => {
       if (a.price_change_percentage_24h > b.price_change_percentage_24h) {
@@ -57,6 +58,7 @@ function HomePage({ history }) {
         return -1;
       }
     });
+
     setVolumeData(volData);
     setPerData(percentData);
   }, [data]);

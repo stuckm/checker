@@ -1,9 +1,9 @@
 a {
   text-decoration: none;
-  color: black;
+  color: #2185d0;
 }
 a:hover {
-  color: #2185d0;
+  color: grey;
 }
 
 .logo-cont {
@@ -100,19 +100,45 @@ a:hover {
 .error-page h3 {
   color: #2185d0;
 }
-.search {
-  margin-right: 5px;
-}
+
 .grid-child h2 {
   font-size: 22px;
 }
 .tag-holder-tag {
   margin-bottom: 10px !important;
 }
+.mob-table-items {
+  display: flex;
+  justify-content: space-between;
+}
+.mob-table-items-titles {
+  display: flex;
+  flex-direction: row;
+}
+.mob-table-items-titles img {
+  width: 5.5rem !important;
+  margin-right: 15px;
+}
+.mob-table-items-prices {
+  display: flex;
+  flex-direction: column;
+}
+.mob-table-items-titles-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-table-items-titles-child p {
+  color: lightGrey;
+}
+
 @media only screen and (max-width: 800px) {
   .table-name-cell {
     display: flex;
     flex-direction: column;
+  }
+  .desk-table {
+    display: none;
   }
   .stats-mob {
     display: block;

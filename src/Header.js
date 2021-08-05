@@ -13,7 +13,6 @@ export default function Header({ getQuery }) {
       <div className="search">
         <Form onSubmit={getQuery}>
           <Input className="search" icon="search" name="query" type="text" />
-          <Button size="tiny" icon="search" type="submit"></Button>
         </Form>
       </div>
     </div>

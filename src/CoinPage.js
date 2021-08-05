@@ -34,6 +34,7 @@ const CoinPage = ({ match, history }) => {
   } = match;
 
   useEffect(() => {
+    setIsLoading(true);
     fetch(
       `https://api.coingecko.com/api/v3/coins/${coinId}?localization=false&tickers=true&market_data=true&sparkline=true`,
       {}
@@ -42,11 +43,10 @@ const CoinPage = ({ match, history }) => {
       .then((response) => {
         setData(response);
         setIsLoading(false);
-        console.log(response);
+        console.log("called api in coin");
       })
-      .catch(function () {
+      .catch((e) => {
         history.replace("/404");
-        console.log("error");
       });
   }, [coinId]);
 
